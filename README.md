@@ -139,5 +139,5 @@ write.table(epibal_gtf_new,
             quote = FALSE)
 ```
 
-This has generated a new GTF with BLAST best hits added where available (ie for matches >50% of full length protein and >50% percent identity). This file is called ```Episyrphus_balteatus_annotations-GCA_945859705.1-2023_05-genes_dmelBestHitsAdded.gtf``` and can be found in toby's mac along with all files except the GTF file needed to reproduce this annotation in the ```/src``` directory.
+This has generated a new GTF with BLAST best hits added where available (ie for matches >50% of full length protein and >50% percent identity). This file is called ```Episyrphus_balteatus_annotations-GCA_945859705.1-2023_05-genes_dmelBestHitsAdded.gtf``` and can be found in toby's mac. All files except the GTF file needed to reproduce this annotation in the ```/src``` directory.
 
