@@ -15,7 +15,7 @@ blastp -query /data/toby/hoverflyAnnotations/hoverflyAssembly/epiBalProteins.fa 
 
 Take the fasta header sequences, strip out the information we don't need so we have four columns, one with gene ID (e.g DBpp0070000), one with D. melanogaster gene name (e.g. Nep3-PA), one with genbank ID (e.g AAF45370), and one with Uniprot ID (e.g Q9W5Y0)
 
-Explanation below;
+Explanation below:
 - ```grep ">" /data/toby/hoverflyAnnotations/droMelAnnotations/dmel-all-translation-r6.46.fasta```:This command uses grep to search for lines in the file dmel-all-translation-r6.46.fasta that contain the ">" character. These lines typically represent sequence identifiers in a FASTA file format.
 - ```sed 's/>//'```: This command uses sed to remove the ">" character from the lines that were identified in the previous step.
 - ```awk '{print $1 "\t" $5 "\t" $7 "\t" $7}'```: This command uses awk to print the first, fifth, and seventh fields from the lines that were identified in the previous step. The first field is the sequence identifier, the fifth field is the gene name, and the seventh field contains the genbank and uniprot identifiers, and so is printed twice. 
